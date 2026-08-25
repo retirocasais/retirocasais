@@ -129,8 +129,13 @@ Já está disponível o link de pagamento em até 12x no cartão/chave pix para 
 		    height: 60px;
 		    border-radius: 50%;
 		    object-fit: cover;
-		    border: 2px solid #bfa17a; /* Borda dourada fina para combinar com o panfleto */
+		    border: 2px solid #bfa17a;
 		    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+		    transition: opacity 0.2s ease;
+		    cursor: pointer; /* Garante o cursor de clique */
+		}
+		.profile-logo:hover {
+		    opacity: 0.85; /* Efeito visual ao passar o mouse ou tocar */
 		}
 
 		
@@ -162,10 +167,12 @@ Já está disponível o link de pagamento em até 12x no cartão/chave pix para 
         <div class="footer-text">
             <strong>Contato da Agência: (27) 99275-2838</strong><br>
             Dúvidas sobre passagem, acomodações, pacote e estadia: tratar com a Secretária da Agência.
-		    <!-- ÍCONE CIRCULAR DISCRETO DA AGÊNCIA -->
-		    <div class="profile-logo-container">
-		        <img src="logo-agencia.jpg" alt="Logo Emissões Premium" class="profile-logo">
-		    </div>			
+			<!-- ÍCONE CIRCULAR DA AGÊNCIA COM LINK PARA O INSTAGRAM -->
+			<div class="profile-logo-container">
+			    <a href="https://www.instagram.com/emissoespremium/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: inline-block;">
+			        <img src="logo-agencia.jpg" alt="Logo Emissões Premium" class="profile-logo">
+			    </a>
+			</div>			
 			<p>
 			<strong>Contato Casais da AD Fonte de Vida Itaparica:</strong><br>
             Eliane/Paulo (27) 99888-6420 / (27) 99610-3866
