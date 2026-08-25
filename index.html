@@ -119,23 +119,35 @@ Já está disponível o link de pagamento em até 12x no cartão/chave pix para 
             line-height: 1.4;
             text-align: center;
         }
-		.profile-logo-container {
-		    text-align: center;
-		    margin-top: 15px;
-		    margin-bottom: 5px;
+		/* Container que coloca as duas logos lado a lado */
+		.logos-row {
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    gap: 20px; /* Espaço de 20px entre as duas logos */
+		    margin-top: 20px;
+		    margin-bottom: 10px;
 		}
+		
+		/* Estilo unificado para os círculos de perfil */
 		.profile-logo {
 		    width: 60px;
 		    height: 60px;
 		    border-radius: 50%;
 		    object-fit: cover;
-		    border: 2px solid #bfa17a;
+		    border: 2px solid #bfa17a; /* Mantém a borda dourada padrão nos dois */
 		    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-		    transition: opacity 0.2s ease;
-		    cursor: pointer; /* Garante o cursor de clique */
 		}
-		.profile-logo:hover {
-		    opacity: 0.85; /* Efeito visual ao passar o mouse ou tocar */
+		
+		/* Efeito de clique apenas na logo da agência (Instagram) */
+		.link-agencia {
+		    text-decoration: none; 
+		    display: inline-block;
+		    transition: opacity 0.2s ease;
+		    cursor: pointer;
+		}
+		.link-agencia:hover {
+		    opacity: 0.85;
 		}
 
 		
@@ -166,17 +178,22 @@ Já está disponível o link de pagamento em até 12x no cartão/chave pix para 
 
         <div class="footer-text">
             <strong>Contato da Agência: (27) 99275-2838</strong><br>
-            Dúvidas sobre passagem, acomodações, pacote e estadia: tratar com a Secretária da Agência.
-			<!-- ÍCONE CIRCULAR DA AGÊNCIA COM LINK PARA O INSTAGRAM -->
-			<div class="profile-logo-container">
-			    <a href="https://www.instagram.com/emissoespremium/" target="_blank" rel="noopener noreferrer" style="text-decoration: none; display: inline-block;">
-			        <img src="logo-agencia.jpg" alt="Logo Emissões Premium" class="profile-logo">
-			    </a>
-			</div>			
+            Dúvidas sobre passagem, acomodações, pacote e estadia: tratar com a Secretária da Agência.		
 			<p>
 			<strong>Contato Casais da AD Fonte de Vida Itaparica:</strong><br>
             Eliane/Paulo (27) 99888-6420 / (27) 99610-3866
 			</p>
+		    <!-- LINHA COM AS DUAS LOGOS LADO A LADO -->
+		    <div class="logos-row">
+		        <!-- 1. Logo Casais da Fonte (Apenas visual, sem link) -->
+		        <img src="logo-casais.jpg" alt="Logo Casais da Fonte" class="profile-logo">
+		
+		        <!-- 2. Logo da Agência (Clicável - leva para o Instagram) -->
+		        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="link-agencia">
+		            <img src="logo-agencia.jpg" alt="Logo Emissões Premium" class="profile-logo">
+		        </a>
+		    </div>
+			
         </div>
     </div>
 </div>
