@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Configuração para a Pré-visualização Clicável no WhatsApp -->
+    <!-- Configuração correta para a Pré-visualização no WhatsApp -->
     <title>Retiro de Casais — Gramado 2027</title>
     <meta name="description" content="Inscrições Abertas! 4 a 7 de Março. Passo 1: Cadastro | Passo 2: Pagamento em até 12x.">
     
-    <!-- Link direto para a foto do panfleto que o WhatsApp vai carregar -->
+    <!-- LINK CORRIGIDO: Agora aponta exatamente para a sua foto no GitHub -->
     <meta property="og:image" content="https://github.io">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
@@ -19,8 +18,6 @@
     <meta property="og:description" content="Garanta a vaga do casal. Acesse os formulários e informações de PIX direto no link.">
     <meta property="og:url" content="https://retirocasais.github.io/retirocasais/">
     <meta property="og:type" content="website">
-
-    <!-- Seu estilo CSS existente continua daqui para baixo -->
 
     <style>
         body {
@@ -42,42 +39,12 @@
             border-radius: 12px;
             margin: 15px;
         }
-        .banner {
-            background: linear-gradient(135deg, #2b1810 0%, #140b07 100%);
-            color: #f1e4d3;
-            text-align: center;
-            padding: 40px 20px;
+        /* Estilo da Imagem do Panfleto no Topo */
+        .banner-img {
+            width: 100%;
+            height: auto;
+            display: block;
             border-bottom: 4px solid #bfa17a;
-        }
-        .banner h1 {
-            font-size: 2.2em;
-            margin: 0;
-            letter-spacing: 2px;
-            color: #f1e4d3;
-            text-transform: uppercase;
-        }
-        .banner .subtitle {
-            color: #bfa17a;
-            font-weight: bold;
-            letter-spacing: 4px;
-            margin-top: 5px;
-            display: block;
-        }
-        .info-grid {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 25px;
-            background: rgba(255,255,255,0.05);
-            padding: 15px;
-            border-radius: 8px;
-        }
-        .info-item {
-            font-size: 0.9em;
-        }
-        .info-item strong {
-            color: #bfa17a;
-            display: block;
-            font-size: 1.1em;
         }
         .content {
             padding: 30px 20px;
@@ -156,24 +123,8 @@
 <body>
 
 <div class="card">
-    <!-- Topo escuro imitando a arte original -->
-    <div class="banner">
-        <span style="font-style: italic; color: #bfa17a;">Vem aí!</span>
-        <h1>Retiro de Casais</h1>
-        <span class="subtitle">* GRAMADO 2027 *</span>
-        
-        <div class="info-grid">
-            <div class="info-item">
-                📅 <strong>4 A 7</strong> DE MARÇO
-            </div>
-            <div class="info-item">
-                📍 <strong>GRAMADO</strong> HOTEL
-            </div>
-            <div class="info-item">
-                💰 <strong>12x R$ 477,00</strong> INVESTIMENTO
-            </div>
-        </div>
-    </div>
+    <!-- Nova TAG: Carrega o seu panfleto real diretamente no topo do site -->
+    <img src="banner.jpg" alt="Retiro de Casais Gramado" class="banner-img">
 
     <!-- Corpo com os botões clicáveis -->
     <div class="content">
@@ -190,7 +141,6 @@
                 <span id="pixKey">09905463739</span>
                 <button class="btn-copy" onclick="copyPix()">COPIAR</button>
             </div>
-            <!--<span style="font-size: 0.8em; color: #7a6855;">Chave Pix para copiar: CPF 09905463739</span>-->
         </div>
 
         <div class="footer-text">
@@ -198,7 +148,8 @@
             Dúvidas sobre passagem, acomodações, pacote e estadia: tratar com a Secretária da Agência.
 			<p>
 			<strong>Contato Casais da AD Fonte de Vida Itaparica:</strong><br>
-            Eliane/Paulo (27) 99888-6420/(27) 99610-3866
+            Eliane/Paulo (27) 99888-6420 / (27) 99610-3866
+			</p>
         </div>
     </div>
 </div>
